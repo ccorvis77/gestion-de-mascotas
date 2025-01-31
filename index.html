@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Mascotas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de Mascotas</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registrar Mascota</h2>
+      <form id="form-mascota">
+        <label for="nombre">Nombre de la mascota:</label>
+        <input type="text" id="nombre" name="nombre" required autocomplete="off">
+
+        <label for="tipo">Tipo de mascota:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Seleccione un tipo</option>
+          <option value="Perro">Perro</option>
+          <option value="Gato">Gato</option>
+          <option value="Ave">Ave</option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <label for="edad">Edad de la mascota:</label>
+        <input type="number" id="edad" name="edad" required min="0">
+
+        <label for="propietario">Propietario:</label>
+        <input type="text" id="propietario" name="propietario" required autocomplete="off">
+
+        <button type="submit">Registrar Mascota</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Lista de Mascotas</h2>
+      <div role="list">
+        <ul id="lista-mascotas">
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gestión de Mascotas</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
