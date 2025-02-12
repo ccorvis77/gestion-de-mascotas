@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestión de Mascotas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Gestión de Mascotas</h1>
@@ -33,6 +35,9 @@
         <label for="propietario">Propietario:</label>
         <input type="text" id="propietario" name="propietario" required autocomplete="off">
 
+        <label for="vacuna">Fecha de la última vacuna:</label>
+        <input type="date" id="vacuna" name="vacuna" required>
+
         <button type="submit">Registrar Mascota</button>
       </form>
     </section>
@@ -44,11 +49,27 @@
         </ul>
       </div>
     </section>
+
+
+    <section>
+      <h2>Citas medicas</h2>
+      <label for="Fecha">Fecha de Cita <input type="date"></label>
+      <h2>Hora de la cita</h2>
+      <label for="hora">
+        hora de la cita <input type="time">
+      </label>
+      <h2>Veterinario</h2>
+      <label for="veterinario">veterinario asignado</label>
+      <textarea id="veterinarios" style="resize: none;" cols="30" rows="5"></textarea>
+      
+
   </main>
 
   <footer>
     <p>&copy; 2025 Gestión de Mascotas</p>
   </footer>
+
   <script src="./script.js"></script>
 </body>
+
 </html>
